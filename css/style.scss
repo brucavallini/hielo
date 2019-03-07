@@ -2,7 +2,6 @@ body {
     font-family: 'Poppins';
 }
 
-
 ::-webkit-scrollbar {
     display: block;
     width: 8px;
@@ -400,11 +399,11 @@ body {
             &::after {
                 content: "";
                 position: absolute;
-                width: 51%;
+                width: 80%;
                 height: 1px;
                 background-color: #999999;
                 top: -4px;
-                left: calc(50% - 25%);
+                left: calc(50% - 40%);
             }
         }
     }
@@ -426,6 +425,17 @@ body {
             font-weight: 300;
             letter-spacing: 4px;
             text-align: center;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                width: 90%;
+                height: 1px;
+                background-color: lightgray;
+                bottom: -10px;
+                left: calc(50% - 45%);
+            }
         }
 
         .gallery-title {
@@ -434,17 +444,6 @@ body {
             font-weight: 300;
             color: black;
             margin-top: 20px;
-            position: relative;
-
-            &::after {
-                content: "";
-                position: absolute;
-                width: 51%;
-                height: 1px;
-                background-color: #999999;
-                top: -4px;
-                left: calc(50% - 25%);
-            }
         }
     }
 
@@ -562,10 +561,6 @@ body {
             &:hover {
                 background: black;
                 color: white;
-
-                .modal-content {
-                    background-color: black;
-                }
             }
         }
     }
@@ -607,24 +602,60 @@ body {
     }
 }
 
-
-
 @media (max-width: 736px) {
+
     .navbar {
         padding: 10px;
     }
 
     .hielo-text {
-        // text-align: center;
-        margin-top: -15px;
+        margin-top: -80px;
 
         .hielo-title {
             font-size: 64px;
         }
     }
 
+    .swiper-container {
+        height: 70vh;
+    }
+
+    .parallax {
+        .parallax-text {
+            .parallax-title {
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 40%;
+                    height: 1px;
+                    background-color: #999999;
+                    top: -4px;
+                    left: calc(50% - 20%);
+                }
+            }
+        }
+    }
+
     .gallery {
         padding: 50px 20px 50px 20px;
+
+        .gallery-text {
+            margin-top: 20px;
+
+            .gallery-subtitle {
+                font-size: 12px;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 45%;
+                    height: 1px;
+                    background-color: lightgray;
+                    bottom: -10px;
+                    left: calc(50% - 23%);
+                }
+            }
+        }
     }
 
     .card {

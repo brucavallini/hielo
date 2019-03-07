@@ -429,11 +429,11 @@ body {
 .parallax .parallax-text .parallax-title::after {
   content: "";
   position: absolute;
-  width: 51%;
+  width: 80%;
   height: 1px;
   background-color: #999999;
   top: -4px;
-  left: calc(50% - 25%);
+  left: calc(50% - 40%);
 }
 
 .gallery {
@@ -463,6 +463,17 @@ body {
   font-weight: 300;
   letter-spacing: 4px;
   text-align: center;
+  position: relative;
+}
+
+.gallery .gallery-text .gallery-subtitle::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background-color: lightgray;
+  bottom: -10px;
+  left: calc(50% - 45%);
 }
 
 .gallery .gallery-text .gallery-title {
@@ -471,17 +482,6 @@ body {
   font-weight: 300;
   color: black;
   margin-top: 20px;
-  position: relative;
-}
-
-.gallery .gallery-text .gallery-title::after {
-  content: "";
-  position: absolute;
-  width: 51%;
-  height: 1px;
-  background-color: #999999;
-  top: -4px;
-  left: calc(50% - 25%);
 }
 
 .gallery .nopadding-1 {
@@ -624,10 +624,6 @@ body {
   color: white;
 }
 
-#modal .modal-content .close:hover .modal-content {
-  background-color: black;
-}
-
 @-webkit-keyframes rotate {
   from {
     background-position: -3000px;
@@ -679,13 +675,40 @@ body {
     padding: 10px;
   }
   .hielo-text {
-    margin-top: -15px;
+    margin-top: -80px;
   }
   .hielo-text .hielo-title {
     font-size: 64px;
   }
+  .swiper-container {
+    height: 70vh;
+  }
+  .parallax .parallax-text .parallax-title::after {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    background-color: #999999;
+    top: -4px;
+    left: calc(50% - 20%);
+  }
   .gallery {
     padding: 50px 20px 50px 20px;
+  }
+  .gallery .gallery-text {
+    margin-top: 20px;
+  }
+  .gallery .gallery-text .gallery-subtitle {
+    font-size: 12px;
+  }
+  .gallery .gallery-text .gallery-subtitle::after {
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 1px;
+    background-color: lightgray;
+    bottom: -10px;
+    left: calc(50% - 23%);
   }
   .card {
     padding: 50px 0 70px 0;
